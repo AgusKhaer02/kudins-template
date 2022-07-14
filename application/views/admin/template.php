@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Hope UI | Responsive Bootstrap 5 Admin Dashboard Template</title>
+      <title>Admin | <?= $title ;?></title>
       
       <!-- Favicon -->
       <link rel="shortcut icon" href="<?= base_url('assets/admin/')?>images/favicon.ico" />
@@ -26,9 +26,6 @@
       
       <!-- Customizer Css -->
       <link rel="stylesheet" href="<?= base_url('assets/admin/')?>css/customizer.min.css" />
-      
-      <!-- RTL Css -->
-      <link rel="stylesheet" href="<?= base_url('assets/admin/')?>css/rtl.min.css"/>
 
 	  <!-- font awesome -->
 	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all">
@@ -59,7 +56,10 @@
       <!--Nav End-->
       </div>
       <div class="conatiner-fluid content-inner mt-n5 py-0">
-
+				<?php
+					$this->load->view('admin/layouts/alerts');
+				?>
+	
 				<?= $page ;?>
 			<!-- PAGE -->
 
@@ -79,6 +79,7 @@
       </footer>
       <!-- Footer Section End -->    
 	</main>
+
 
 	<!-- SETTINGS -->
 

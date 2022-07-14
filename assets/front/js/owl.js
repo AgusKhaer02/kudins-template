@@ -217,7 +217,6 @@
 		slideTransition: '',
 
 		info: false,
-
 		nestedItemSelector: false,
 		itemElement: 'div',
 		stageElement: 'div',

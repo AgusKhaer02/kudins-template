@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database','session','upload','form_validation','user_agent');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('url','security','admin/auth_helper','front/auth_helper','front/etc_helper','download');
 
 /*
 | -------------------------------------------------------------------
@@ -133,5 +133,18 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-	'admin/Etc_m' => 'etc',
+	'Crud_m' => 'crud',
+	'Etc_m' => 'etc',
+	'front/FrontAuth_m' => 'front_auth',
+	'admin/Auth_m' => 'auth',
+	'admin/MasterCategories_m' => 'master_categories',
+	'admin/MasterSubcategory_m' => 'master_subcategory',
+	'admin/MasterTemplate_m' => 'master_template',
+	'admin/TemplateGallery_m' => 'template_gallery',
+
+	'front/Category_m' => 'front_category',
+	'front/FrontProfile_m' => 'front_profile',
+	'front/Subcategory_m' => 'front_subcategory',
+	'front/Template_m' => 'front_template',
+
 );
